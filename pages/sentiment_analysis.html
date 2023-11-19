@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Star Admin Premium Bootstrap Admin Dashboard Template</title>
+    <!-- plugins:css -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/iconfonts/ionicons/dist/css/ionicons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/css/vendor.bundle.base.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/css/vendor.bundle.addons.css"
+    />
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <link rel="stylesheet" href="../assets/vendors/icheck/skins/all.css" />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../assets/css/shared/style.css" />
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../assets/css/demo_1/style.css" />
+    <!-- End Layout styles -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../partials/_navbar.html -->
+      <nav
+        class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row"
+      >
+        <div
+          class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center"
+        >
+          <a class="navbar-brand brand-logo" href="../index.html">
+            <img src="../images/logo/logo.png" alt="logo" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="../index.html">
+            <img src="../images/logo/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-center">
+          <ul class="navbar-nav">
+            <li class="nav-item font-weight-semibold d-none d-lg-block">
+              <a href="../index.html">Dashboard</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item font-weight-semibold d-none d-lg-block">
+              <a href="sentiment_analysis.html">Sentiment Analysis</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item font-weight-semibold d-none d-lg-block">
+              <a href="../pages/entities.html">Entities</a>
+            </li>
+          </ul>
+          <form class="ml-auto search-form d-none d-md-block" action="#">
+            <div class="form-group">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Search Here"
+              />
+            </div>
+          </form>
+
+          <button
+            class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
+            type="button"
+            data-toggle="offcanvas"
+          >
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav" style="padding-top: 30px">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">
+                <i class="menu-icon typcn typcn-document-text"></i>
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="sentiment_analysis.html">
+                <i class="menu-icon typcn typcn-shopping-bag"></i>
+                <span class="menu-title">Sentiment Analysis</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./entities.html">
+                <i class="menu-icon typcn typcn-th-large-outline"></i>
+                <span class="menu-title">Entities</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/tables/basic-table.html">
+                <i class="menu-icon typcn typcn-bell"></i>
+                <span class="menu-title">Tables</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/icons/font-awesome.html">
+                <i class="menu-icon typcn typcn-user-outline"></i>
+                <span class="menu-title">Icons</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <!-- Page Title Header Starts-->
+            <div class="row page-title-header">
+              <div class="col-md-12">
+                <div class="page-header-toolbar">
+                  <div class="wrapper">
+                    <p>
+                      Due to restrictions of APIs of these platforms and
+                      malfunctioning of other libraries ,we had to manually
+                      scrape the Facebook posts and Tweets with the word
+                      "Canada" in their posts, from the most followed handles. (
+                      since, these platforms have the most engagements)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-8 grid-margin stretch-card">
+                <div class="card">
+                  <div class="fill">
+                    <img
+                      id="myImg"
+                      class="myImages"
+                      src="../images/sentiment/wordcloud.png"
+                      alt="Snow"
+                    />
+
+                    <div id="myModal" class="modal">
+                      <span class="close">&times;</span>
+
+                      <img class="modal-content" id="img01" />
+
+                      <div id="caption"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="fill">
+                    <img
+                      id="myImg"
+                      class="myImages"
+                      src="../images/sentiment/total positive and negative news.png"
+                    />
+
+                    <div id="myModal" class="modal">
+                      <span class="close">&times;</span>
+
+                      <img class="modal-content" id="img01" />
+
+                      <div id="caption"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-md-6 grid-margin stretch-card">
+                    <div class="card">
+                      <div class="card-body pb-0">
+                        <div class="d-flex justify-content-between">
+                          <p class="card-title mb-0">
+                            The most used significant words in these posts are Toronto, Olympic, panda, Trudeau and so on.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 grid-margin stretch-card">
+                    <div class="card">
+                      <div class="card-body pb-0">
+                        <p class="card-title mb-0">
+                          The posts with positive sentiments seem to outnumber the posts with negative sentiments.
+                        </p>
+                        <h3 class="font-weight-medium"></h3>
+                      </div>
+                    </div>
+                  </div> 
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 grid-margin stretch-card">
+            <div class="card">
+              <div class="fill">
+                <img
+                  id="myImg"
+                  class="myImages"
+                  src="../images/sentiment/different chinese news sources.png"
+                  alt="Snow"
+                />
+
+                <div id="myModal" class="modal">
+                  <span class="close">&times;</span>
+
+                  <img class="modal-content" id="img01" />
+
+                  <div id="caption"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 grid-margin stretch-card">
+            <div class="card">
+            <div class="card-body pb-0">
+              <p class="card-title mb-0">
+                Some top Chinese news sources seem to have posted more news with negative sentiments than that with positive sentiments (these news include the word "Canada"). It is, however to be kept in mind that these posts with negative sentiments may be about anything, like the defeat of Canadian sports teams, the news of accidents, news about COVID-19 and so on.</p>
+              <h3 class="font-weight-medium"></h3>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="container-fluid clearfix">
+            <span
+              class="text-muted d-block text-center text-sm-left d-sm-inline-block"
+              >Copyright</span
+            >
+            <span
+              class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"
+            >
+              Free Bootstrap admin template
+            </span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="assets/vendors/js/vendor.bundle.addons.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="assets/js/shared/off-canvas.js"></script>
+    <script src="assets/js/shared/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="assets/js/demo_1/dashboard.js"></script>
+    <!-- End custom js for this page-->
+    <script
+      src="assets/js/shared/jquery.cookie.js"
+      type="text/javascript"
+    ></script>
+    <script>
+      // create references to the modal...
+      var modal = document.getElementById("myModal");
+      // to all images -- note I'm using a class!
+      var images = document.getElementsByClassName("myImages");
+      // the image in the modal
+      var modalImg = document.getElementById("img01");
+      // and the caption in the modal
+      var captionText = document.getElementById("caption");
+
+      // Go through all of the images with our custom class
+      for (var i = 0; i < images.length; i++) {
+        var img = images[i];
+        // and attach our click listener for this image.
+        img.onclick = function (evt) {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        };
+      }
+
+      var span = document.getElementsByClassName("close")[0];
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+    </script>
+    <script>
+      let twitterIndex = 1;
+      showSlides(twitterIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((twitterIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((twitterIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("twitterSlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          twitterIndex = 1;
+        }
+        if (n < 1) {
+          twitterIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[twitterIndex - 1].style.display = "block";
+        dots[twitterIndex - 1].className += " active";
+        captionText.innerHTML = dots[twitterIndex - 1].alt;
+      }
+    </script>
+
+    <script>
+      let fbIndex = 1;
+      showSlides(fbIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((fbIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((fbIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("fbSlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          fbIndex = 1;
+        }
+        if (n < 1) {
+          fbIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[fbIndex - 1].style.display = "block";
+        dots[fbIndex - 1].className += " active";
+        captionText.innerHTML = dots[fbIndex - 1].alt;
+      }
+    </script>
+
+    <script>
+      let instaIndex = 1;
+      showSlides(instaIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((instaIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((instaIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("instaSlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          instaIndex = 1;
+        }
+        if (n < 1) {
+          instaIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[instaIndex - 1].style.display = "block";
+        dots[instaIndex - 1].className += " active";
+        captionText.innerHTML = dots[instaIndex - 1].alt;
+      }
+    </script>
+
+    <script>
+      let threadsIndex = 1;
+      showSlides(threadsIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((threadsIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((threadsIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("threadsSlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          threadsIndex = 1;
+        }
+        if (n < 1) {
+          threadsIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[threadsIndex - 1].style.display = "block";
+        dots[threadsIndex - 1].className += " active";
+        captionText.innerHTML = dots[threadsIndex - 1].alt;
+      }
+    </script>
+
+    <script>
+      let ytIndex = 1;
+      showSlides(ytIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((ytIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((ytIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("ytSlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          ytIndex = 1;
+        }
+        if (n < 1) {
+          ytIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[ytIndex - 1].style.display = "block";
+        dots[ytIndex - 1].className += " active";
+        captionText.innerHTML = dots[ytIndex - 1].alt;
+      }
+    </script>
+
+    <script>
+      let ttIndex = 1;
+      showSlides(ttIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((ttIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((ttIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("ttSlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          ttIndex = 1;
+        }
+        if (n < 1) {
+          ttIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[ttIndex - 1].style.display = "block";
+        dots[ttIndex - 1].className += " active";
+        captionText.innerHTML = dots[ttIndex - 1].alt;
+      }
+    </script>
+  </body>
+</html>

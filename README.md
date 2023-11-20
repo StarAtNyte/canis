@@ -9,4 +9,5 @@ https://canis-data-viz.netlify.app
 ### Link to notebooks(code):
 https://www.kaggle.com/datasets/staratnyte/canis-data-visualization-hackathon/code
 
-
+### Link to the video:
+https://www.youtube.com/watch?v=b7U-pDUQXSY
